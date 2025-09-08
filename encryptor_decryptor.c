@@ -1,5 +1,3 @@
-
-#define _GNU_SOURCE
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -11,7 +9,7 @@ void getval(char str3[])
 	printf("\n------------------------------------------------------------\n\n");
 
 	printf("\nEnter the massage to   \n");
-	gets(str3);
+	fgets(str3, N, stdin);
 
 	printf("\n------------------------------------------------------------\n\n");
 }

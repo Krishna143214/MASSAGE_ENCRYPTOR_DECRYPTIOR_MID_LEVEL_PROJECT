@@ -95,7 +95,7 @@ void decrypt_massage(char a[])
 	fprintf(ptr2, "\n------------------------------------------------------------\n\n");
 
 	scanf("%d", &kye);
-	fprintf(ptr2, "\nDECRYPTION KYE\n\n\n", kye);
+	fprintf(ptr2, "\nDECRYPTION KYE %d\n\n\n", kye);
 
 	for (int j = 0; a[j] != '\0'; j++)
 	{

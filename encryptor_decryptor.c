@@ -111,12 +111,89 @@ void decrypt_massage(char a[])
 	fclose(ptr2);
 }
 
+
+
+//colors
+
+
+void red(){
+	
+	printf("\033[1;31m");
+	
+	
+	}
+
+
+void green(){
+	printf("\033[1;32m");
+	
+	
+	
+	}
+	
+	void blue(){
+		printf("\033[1;34m");
+		
+		
+		}
+		
+		
+		
+		
+		
+	void black(){
+		printf("\033[1;30m");
+		
+		
+		}		
+		
+		void megenta(){
+		printf("\033[1;35m");
+		
+		
+		}	
+		
+			
+		void cyan(){
+		printf("\033[1;36m");
+		
+		
+		}	
+		
+					
+		void white(){
+		printf("\033[1;37m");
+		
+		
+		}
+		
+		
+			void yellow(){
+		printf("\033[1;33m");
+		
+		
+		}	
+		
+	
+  void reset(){
+  	
+  		printf("\033[1;0m");
+  	}
+
+
+
+
+
+
+
 int main()
 {
 	srand(time(NULL));
 
-	while (1)
+	while (1)	
 	{
+		cyan();//changes code color to cyan
+		
 		char str[N];
 		int ch;
 		char str2[N];
@@ -126,7 +203,7 @@ int main()
 
 		printf("\n------------------------------------------------------------\n\n");
 
-		printf("              MASSEGE ENCRYPTOR BY KRISHNA \n");
+		printf("              MASSEGE ENCRYPTOR BY KRISHNA  \n");
 
 		printf("\n------------------------------------------------------------\n\n");
 
@@ -135,10 +212,13 @@ int main()
 		printf(" IF THIS PROGRAM IS GONE ON INFINITE LOOP PLEASE CLOSE THE \nPROGRAM AND RUN AGAIN \n\n:))) enjoy\n");
 
 		printf("\n------------------------------------------------------------\n\n");
+		
+	
 
 		printf("\nENTER THE OPERATION YOU WANNA PERFROM\n\n");
 
 		printf("\n------------------------------------------------------------\n\n");
+		green();//color change to green
 
 		printf("\n1.ENCRYPTION\n");
 		printf("\n2.DECRYPTION\n");
@@ -154,6 +234,9 @@ int main()
 		{
 		case 1:
 		{
+			
+			
+			yellow();//changes to red
 			printf("\n------------------------------------------------------------\n\n");
 
 			printf("\n\nSO You Click On Encryption\n ");
@@ -174,6 +257,8 @@ int main()
 
 		case 2:
 		{
+			
+			megenta();//changes color
 			printf("\n------------------------------------------------------------\n\n");
 
 			printf("\n\nSO You Click On Decryption\n ");
@@ -194,6 +279,7 @@ int main()
 
 		case 3:
 		{
+			red();//changes the color
 			printf("\n------------------------------------------------------------\n\n");
 
 			printf("\n\nSO You Click On EXIT\n ");
@@ -208,11 +294,18 @@ int main()
 		}
 
 		} //switch
+		
+	
 
 		if (Exit > 0)
 		{
 			printf("bye");
+			
+			reset();
 			break;
 		}
+		
+		
+		
 	}
 }
